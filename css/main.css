@@ -423,3 +423,37 @@ body {
     padding-top: 30px;
     line-height: 22px;
  }
+
+ /*Book Now mobile page rules start now!*/
+
+ #calendarimage {
+   margin-top: 15px;
+ }
+
+ #booknowform {
+   font-size: 14px;
+   line-height: 15px;
+   background-color: #c7c7c7;
+ }
+
+ #dateform {
+   display: flex;
+ }
+
+ #nightsform {
+   display: flex;
+
+ }
+
+ #guestsform {
+   display: flex;
+ }
+
+ #submit-button {
+   display: flex;
+   background-color: #9a2018;
+   color: white;
+   padding: 15px;
+   justify-content: center;
+ }
+

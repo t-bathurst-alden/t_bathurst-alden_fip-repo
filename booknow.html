@@ -36,18 +36,39 @@
     
     <main>
         <section id="main-hero" class="grid-full">
-                <img src="images/hero-main.jpg" alt="couples resort on lake" class="col-span-full hero-overlap">
+                <img src="images/booknow-hero-mob.jpg" alt="Two people looking happily down at a device" class="col-span-full hero-overlap">
                 <div class="grid-con col-span-full hero-overlap">
-                    <a class="book-now col-start-3 col-end-5" id="book-now-top" href="#">Book Now</a>
-                    <h2 class="hero-img-h2"><span>Couples Resort</span><br> 5 Star, Luxury Couples Resort &amp; Spa</h2> 
-                </div>   
+                    <h2 class="hero-img-h2"><span>Couples Resort</span><br>Book Now</h2> 
+                </div>
         </section> 
+        <!--This is where I start my page specific code! The calendar will be an image, sorry :(-->
+        <div id="booknow-submit">
+            <img src="images/booknow-mobile-calendar.jpg" alt="A calendar graphic that does not work because the developer is stupid" id="calendarimage">
 
-        <section id="hero-welcome" class="grid-con">
-            <h2 class="hidden">Welcome Information</h2>
-            <p class="col-span-full">Welcome to Couples Resort, Soyers Lake.  Haliburton's Only 5 STAR Luxury Resort.  Fine Luxury while still being Rustic with Wilderness.  A Boutique Luxury Resort with Junior suite rooms and cottages that are each designed uniquely, just for the 2 of you, varying between Opulent Old European to Natural Hailburton Style.  Come and experience very spacious accommodations, each and all, with Jacuzzi's, Wood Burning Fireplaces, Hot Tubs and so much more. </p> 
-            <p class="col-span-full">"For over 50 years we have been committed to helping couples stay connected. 100% Canadian Owned, By the LeBlanc Family since 1958."</p>
-        </section>
+        <div id="booknowform">
+            <form action="form.php" method="post">
+            <div id="dateform">
+            <label for="search">Date:</label>
+            <input id="search" type="search" placeholder="May 12th 2026">
+            </div>
+            <div id="nightsform">
+            <label for="search">Nights:</label>
+            <input id="search" type="search" placeholder="0">
+            </div>
+            <div id="guestsform">
+            <label for="search">Guests:</label>
+            <input id="search" type="search" placeholder="0">
+            </div>
+            <div>
+                <a href="#" id="submit-button">Check Availability and Rates</a>
+            </div>
+        </div>
+        </div>
+
+    <section>
+
+    </section>
+
 
 
 
