@@ -43,26 +43,16 @@
         </section> 
         <!--This is where I start my page specific code! The calendar will be an image, sorry :(-->
         <div id="booknow-submit">
-            <img src="images/booknow-mobile-calendar.jpg" alt="A calendar graphic that does not work because the developer is stupid" id="calendarimage">
-
-        <div id="booknowform">
-            <form action="form.php" method="post">
-            <div id="dateform">
-            <label for="search">Date:</label>
-            <input id="search" type="search" placeholder="May 12th 2026">
-            </div>
-            <div id="nightsform">
-            <label for="search">Nights:</label>
-            <input id="search" type="search" placeholder="0">
-            </div>
-            <div id="guestsform">
-            <label for="search">Guests:</label>
-            <input id="search" type="search" placeholder="0">
-            </div>
-            <div>
-                <a href="#" id="submit-button">Check Availability and Rates</a>
-            </div>
-        </div>
+            <img src="images/booknow-mobile-calendar.jpg" alt="A calendar graphic that does not work" id="calendarimage">
+                <section id="contact-form-fields-right" class="grid-con col-span-full">
+                    <h3 class="hidden">Contact Us Form</h3>
+                    <form action="email.php" method="POST" enctype="text/plain">
+                        <input name="fullName" type="text" placeholder="First & Last Name">
+                        <input name="contactInfo" type="text" required placeholder="Phone number or Email">
+                        <textarea name="msg" placeholder="Enter your questions, comments or concerns here..."></textarea>
+                        <input name="submit" type="submit" value="Send">
+                    </form>
+                </section>
         </div>
 
     <section>

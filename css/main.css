@@ -457,3 +457,52 @@ body {
    justify-content: center;
  }
 
+ /* Spa Page CSS */
+
+.spa-hero-par{
+    border-top: solid 3px #CF6666;
+    margin-top: 15px;
+    padding-top: 20px;
+ } 
+
+.spa-list {
+    margin-bottom: 16px;
+
+ }
+
+
+.spa-list h3 {
+    background: #e8e7e7;
+    padding: 10px;
+    font-size: 15px;
+ }
+ 
+.spa-list ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+ }
+ 
+ .spa-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #9a2018;
+ }   
+ 
+ 
+ .faq-list-con {
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+
+ .spa-paragraph {
+   margin-top: 15px;;
+ }
+
+.spa-hero {
+    margin-top: 20px;
+}
+
+#skincare-ad {
+   display: flex;
+   justify-content: center;
+}
