@@ -318,7 +318,7 @@ body {
  
  .faq-items ul {
     margin: 0;
-    padding: 0;
+    padding:0;
     list-style-type: none;
  }
  
@@ -335,6 +335,7 @@ body {
  .faq-list-con {
     margin-top: 20px;
     margin-bottom: 20px;
+    
  }
  
 /* 7. ---Contact Form--- */
@@ -380,14 +381,9 @@ body {
     color: #fff;
     border: none;
     transition: all 200ms ease-in;
-    width: 150px;
     align-self: flex-end;
  }
 
- #contact-form-fields-right input[type="submit"]:hover {
-    background-color: #626262;
-    border-radius: 0;
- }
 
 /* .8 --- Footer --- */
 
@@ -424,38 +420,6 @@ body {
     line-height: 22px;
  }
 
- /*Book Now mobile page rules start now!*/
-
- #calendarimage {
-   margin-top: 15px;
- }
-
- #booknowform {
-   font-size: 14px;
-   line-height: 15px;
-   background-color: #c7c7c7;
- }
-
- #dateform {
-   display: flex;
- }
-
- #nightsform {
-   display: flex;
-
- }
-
- #guestsform {
-   display: flex;
- }
-
- #submit-button {
-   display: flex;
-   background-color: #9a2018;
-   color: white;
-   padding: 15px;
-   justify-content: center;
- }
 
  /* Spa Page CSS */
 
@@ -543,3 +507,80 @@ summary {
    padding-top: 15px;
 }
 
+
+/*Book Now mobile page rules start now!*/
+
+ #calendarimage {
+   margin-top: 15px;
+ }
+
+ #booknowform {
+   font-size: 14px;
+   line-height: 15px;
+   background-color: #c7c7c7;
+ }
+
+ #submit-button {
+   display: flex;
+   color: white;
+
+   justify-content: center;
+ }
+
+#phone-svg {
+   float:left;
+}
+
+#marker-svg {
+   float: right;
+}
+
+#booknowcontact {
+   margin: 20px;
+}
+
+.submit-button:hover {
+   animation: jump 1s ease-in-out infinite;
+}
+
+@keyframes jump{
+   0% {transform: translateY(0px);}
+   50% {transform: translateY(-10px);}
+   100% {transform: translateY(0px);}
+}
+
+input[type="submit"]:checked + span::after {
+    content: "👍🏻"
+}
+
+#booknow-deals {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+
+#activitiessquare {
+   background-image: url(../images/booknow-activities-mobile.jpg);
+}
+#activitiessquare:hover {
+   background-image: url(../images/booknow-mobile-hover.jpg);
+}
+
+#booking-info {
+   border-bottom: solid 3px #9a2018;
+}
+
+#bn-faq {
+   background-color: #fff;
+}
+
+#marker-svg-bottom {
+   float: left; 
+}
+#bottomcontact {
+   background-color: #fff;
+}
+.hero-no-par {
+   border-bottom: solid 3px #9a2018;
+   padding-bottom: 20px;
+}
