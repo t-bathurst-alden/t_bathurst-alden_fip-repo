@@ -26,7 +26,7 @@
                     <li><a href="#">Packages</a></li>
                     <li><a href="#">Dining</a></li>
                     <li><a href="spa.html">Spa Activities</a></li>
-                    <li><a href="#">Reservations</a></li>
+                    <li><a href="booknow.html">Reservations</a></li>
                 </ul>
         </nav>
         <div id="logo" class="col-span-full">
@@ -42,23 +42,122 @@
                 </div>
         </section> 
         <!--This is where I start my page specific code! The calendar will be an image, sorry :(-->
-        <div id="booknow-submit">
-            <img src="images/booknow-mobile-calendar.jpg" alt="A calendar graphic that does not work" id="calendarimage">
-                <section id="contact-form-fields-right" class="grid-con col-span-full">
-                    <h3 class="hidden">Contact Us Form</h3>
+        <div id="calendarimage">
+            <img src="images/booknow-mobile-calendar.jpg" alt="An image of a calendar">
+        </div>
+        <section class="grid-con" id="booknowform">
+                    <section id="contact-form-fields-right" class="col-span-full">
+                    <h3 class="hidden">Check Availability and Rates</h3>
                     <form action="email.php" method="POST" enctype="text/plain">
-                        <input name="fullName" type="text" placeholder="First & Last Name">
-                        <input name="contactInfo" type="text" required placeholder="Phone number or Email">
-                        <textarea name="msg" placeholder="Enter your questions, comments or concerns here..."></textarea>
-                        <input name="submit" type="submit" value="Send">
+                        <label for="date">Date:</label>
+                        <input name="date" type="text" placeholder="May 12th, 2026">
+                        <label for="nights">Nights:</label>
+                        <input name="nights" type="text" placeholder="0">
+                        <label for="guests">Guests:</label>
+                        <input name="guests" type="text" placeholder="0">
+                        <div id="submit-button">
+                        <input class="submit-button" name="submit" type="submit" value="Check Availability and Rates"><span></span>
+                        </div>
                     </form>
                 </section>
-        </div>
+        </section>
+        <section class="grid-con" id="booknowcontact">
+                <div class="col-span-full">             
+                    <i class="fas fa-mobile-alt" id="phone-svg"></i>
+                    <p id="contact-text">
+                        Toll Free:<a href="tel:1-866-202-1179">+1 866 202-1179</a><br>
+                        Fax:+1 613 637 2615<br>
+                        info[at]coupleresort.com
+                    </p>   
+                </div> 
+                <div class="col-span-4">            
+                    <i class="fas fa-map-marker-alt" id="marker-svg"></i>
+                    <p id="hero-address">
+                        1198 Osprey Rd, (End of)<br>
+                        Minden, Soyers Lake, ON<br>
+                        K0M 2K0
+                    </p>   
+                </div>   
+        </section>
+        <section id="booknow-info-hero" class="grid-full">
+                <img src="images/booknow-dealshero-mobile.jpg" alt="A couple in a sauna together" class="col-span-full hero-overlap">
+                <div class="grid-con col-span-full hero-overlap">
+                    <h2 class="hero-img-h2"><span>Couples Resort</span><br>Deals and Offers!</h2> 
+                </div>   
+        </section> 
 
-    <section>
+        <section class="grid-con" id="booknow-deals">
+            <div class="col-span-2">
+                <img src="images/booknow-holidays-mobile.jpg" alt="A woman standing in the snow">
+            </div>
+            <div class="col-span-2" id="activitiessquare">
+            </div>
+            <div class="col-span-2">
+                <img src="images/booknow-dining-mobile.jpg" alt="A delicious bowl of pasta with some wine">
+            </div>
+            <div class="col-span-2">
+                <img src="images/fillerbox.jpg" alt="A blank grey square cause Jarrod told me to.">
+            </div>
+        </section>
+        <section id="bn-faq" class="grid-con">
+            <h2 class="hidden">Booking Information</h2>
+            <p id="booking-info" class="col-span-3">Reservations and Booking Information</p>
+        </section>
+        <section class="faq grid-con">
+                <div class="faq-items col-span-full">
+                    <h3>&#9658; Policies</h3>
+                </div>
+                <div class="faq-items col-span-full">
+                    <h3>&#9658; Deposits</h3>
+                </div>
+                <div class="faq-items col-span-full">
+                    <h3>&#9658; Guest Cancellation and Change Date Fees</h3>
+                </div>
+                <div class="faq-items col-span-full">
+                    <h3>&#9658; Extra Fees</h3>
+                </div>
+                <div class="faq-items col-span-full">
+                    <details>
+                        <summary>
+                        <h3>&#9658; Property Policy</h3>
+                        </summary>
+                        <ul>
+                            <li>Front Desk office hours are 8:30 am to 10:00 pm.</li>
+                            <li>Fiber-Optic $$$$ Internet Feeds this remote Resort, currently we provide it Free.</li>
+                            <li>Cell phone coverage is also available in our area.</li>
+                            <li>Breakfast: 8:30 am to 10:30 am - Please reserve a room service time</li>
+                            <li>Lunch: 12:00 pm to 4:00 pm - Served/Take out/Room Service.</li>
+                            <li>Dinner: Please reserve a Table or Room Service time by calling Extension 108 between 1:00 pm - 5:00 pm the day of your arrival.</li>
+                            <li>All Accommodations have Hot Tubs: Resort Policy for your Health Protection is that Hot Tub Chemical Testing is done daily in your Hot Tub, regardless of signage you hang at your door.</li>
+                            <li>Cleaning will occur between 9 am and mid-afternoon. The cleaning card MUST be displayed on your outside door handle or in the plastic holder for housekeeping.</li>
+                            <li>Business Services are available - Inquire at Front Desk.</li>
+                            <li>Please no disturbing music around the lake front or from your private deck.</li>
+                            <li>Keep rooms quiet after 12 midnight.</li>
+                            <li>No Pets Allowed.</li>
+                            <li>All rooms are non-smoking and non-vaping. There are ashtrays provided for smokers located on the balcony or patio. There will be a $300 surcharge applied, if you are smoking or vaping or leaving Cannabis in your accommodation. Leave Cannabis in your vehicle as it is known to stink up the accommodation. During the Spring, Summer and Fall there are Firepits set up by the lake for those that indulge, to enjoy.</li>
+                            <li>All Damages to Accommodations and facilities are the guest's responsibility!</li>
+                            <li>Please give privacy & respect to homes & cottages on the lake and on the Resort. Do Not Trespass.</li>
+                        </ul>
+                    </details>
+                </div>
+                <div class="faq-items col-span-full">
+                    <h3>&#9658; Tipping and Gratuity Advice</h3>
+                </div>
+                <div class="faq-items col-span-full">
+                    <h3>&#9658; Power Outage Policy</h3>
+                </div>
 
-    </section>
-
+        </section>
+        <section class="grid-con" id="bottomcontact">
+            <div class="col-span-4">            
+                    <i class="fas fa-map-marker-alt" id="marker-svg-bottom"></i>
+                    <p id="hero-address">Location for Policy Inquiries</p>
+                            <p>139 Galeairy Lake Road</p>
+                            Whitney, Ontario, Canada, K0J 2M0</p>
+                            <p>1-866-202-1179</p>
+                            <p>O. Box 310</p>
+                </div>   
+        </section>
 
 
 
