@@ -460,14 +460,15 @@ body {
  /* Spa Page CSS */
 
 .spa-hero-par{
-    border-top: solid 3px #CF6666;
-    margin-top: 15px;
-    padding-top: 20px;
+   border-top: solid 3px #CF6666;
+   margin-top: 15px;
+   padding-top: 20px;
+
  } 
 
 .spa-list {
-    margin-bottom: 16px;
-
+   margin-bottom: 16px;
+   
  }
 
 
@@ -485,7 +486,7 @@ body {
  
  .spa-list li {
     padding: 8px 0;
-    border-bottom: 1px solid #9a2018;
+    border-bottom: 1px solid #efefef;
  }   
  
  
@@ -495,7 +496,8 @@ body {
  }
 
  .spa-paragraph {
-   margin-top: 15px;;
+   margin-top: 15px;
+
  }
 
 .spa-hero {
@@ -506,3 +508,38 @@ body {
    display: flex;
    justify-content: center;
 }
+
+#feature-hovers {
+   margin-top: 20px;
+   border-top: solid 3px #CF6666;
+   padding: 20px;
+}
+
+#policies-list {
+   border-top: solid 3px #CF6666;
+   margin-top: 15px;
+   padding-top: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+#award-par {
+   margin-top: 20px;
+   justify-self: center;
+}
+
+#award-par img {
+   justify-self: center;
+}
+
+
+/*FAQ dropdown menu*/
+
+details:hover {
+   cursor: pointer;
+}
+
+summary {
+   padding-top: 15px;
+}
+
