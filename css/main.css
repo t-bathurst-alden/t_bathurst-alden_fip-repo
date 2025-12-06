@@ -497,7 +497,7 @@ body {
 }
 
 
-/*FAQ dropdown menu*/
+/*FAQ Page*/
 
 details:hover {
    cursor: pointer;
@@ -506,6 +506,37 @@ details:hover {
 summary {
    padding-top: 15px;
 }
+
+.mbbuynow {
+   background-color: #9a2018;
+   color: white;
+}
+ .faq summary {
+     background: #e8e7e7;
+    padding: 10px;
+    font-size: 15px;
+ }
+
+#merchstore ul li{
+   padding-bottom: 20px;
+}
+
+input[type="checkbox"]::before {
+   position: relative;
+   display: block;
+   width: 55px;
+   height: 15px;
+   color: white;
+   background-color: #9a2018;
+   content: "Buy Now";
+   padding: 5px;
+   left: 300px;
+}
+
+input[type="checkbox"]:checked + span::after {
+   content: "💰";
+}
+
 
 
 /*Book Now mobile page rules start now!*/
@@ -584,3 +615,167 @@ input[type="submit"]:checked + span::after {
    border-bottom: solid 3px #9a2018;
    padding-bottom: 20px;
 }
+
+/*Desktop CSS*/
+
+#desk-logo {
+   padding-top: 30px;
+}
+
+#main-desk-nav ul {
+   display: flex;
+   text-decoration: none;
+   list-style-type: none;
+   grid-column: 1/-1;
+   border-left: 1px solid #9a2018;
+   margin-bottom: 0px;
+   margin-top: 0px;
+}
+
+#main-desk-nav ul li {
+   padding-top: 43px;
+   padding-bottom: 43px;
+   padding-left: 30px;
+   padding-right: 30px;
+}
+
+#deskbooknow {
+   background-color: #9a2018;
+   color: white;
+}
+
+#desk-main-hero {
+   margin: 0 auto;
+}
+
+.desk-hero-img-h2 {
+    background: rgb(255, 255, 255);
+    padding: 30px 30px;
+    font-size: 17px;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    align-self: end;
+ }
+
+ .desk-hero-overlap {
+   grid-row: 1/1;
+ }
+
+ #deskbooknowform {
+   font-size: 14px;
+   line-height: 15px;
+   background-color: #c7c7c7;
+   padding-top: 30px;
+   margin-top: 20px;
+ }
+
+
+ #desk-contact {
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   font-size: 18px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+ }
+
+ #deskcalendar {
+   float: right;
+   margin-left: 20px;
+ }
+
+ #phone-icon {
+   padding-left: 50px;
+   padding-right: 50px;
+ }
+
+ #marker-icon {
+   padding-left: 50px;
+   padding-right: 50px;
+ }
+
+ #desk-faq-hero {
+   margin: 0 auto;
+ }
+
+ #deskbnimages {
+   margin-top: 20px;
+ }
+
+ #contactarea {
+   background-color: #f4f4f4;
+ }
+
+ #desk-main-hero h2 span {
+   font-size: 12px;
+ }
+
+ #desk-faq-hero h2 span {
+   font-size: 12px;
+ }
+
+ #policy-inq {
+   display: flex;
+   align-items: center;
+ }
+
+ #main-footer-desk {
+    background-image: url(../images/desk-footer.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+    padding-bottom: 80px;
+ }
+
+ #main-footer-contact-info-desk h3 {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'ceragr-regularuploaded_file', arial, sans-serif;
+ }
+
+ #main-footer-contact-info-desk p {
+   padding-top: 20px;
+ }
+
+ #main-footer-desk nav {
+    display: none;
+ }
+
+ #price-policy-desk {
+    border-top: solid 1px #CF6666;
+    margin-top: 15px;
+    padding-top: 30px;
+    line-height: 22px;
+ }
+
+footer ul li {
+   font-size: 18px;
+   line-height: 40px;
+   list-style: none;
+   text-decoration: none;
+   padding-top: 30px;
+}
+
+
+
+ #booknowbuttondesk {
+   color: white;
+   background-color: #9a2018;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   padding-right: 40px;
+   padding-left: 40px;
+   display: flex;
+   justify-content: center;
+   margin-left: 100px;
+ }
+
+ .desk-hero-overlap2 {
+   grid-row: 1/1;
+   background-color: #9a2018;
+   padding: 20px;
+ }
