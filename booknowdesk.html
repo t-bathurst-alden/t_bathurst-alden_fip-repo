@@ -2,10 +2,177 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d0e8431583.js" crossorigin="anonymous"></script>
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Welcome to The Couples Resort</title>
 </head>
-<body>
-    
-</body>
+    <body>
+        <h1 class="hidden">Welcome to The Couples Resort</h1>
+        <header id="main-header" class="desk-grid-con">
+            <div id="desk-logo" class="desk-col-start-1 desk-col-end-4">
+                <img src="images/couples_resort_logo.svg" alt="The Couples Resort Logo">
+            </div>
+            <nav class="desk-grid-con" id="main-desk-nav">
+                <h2 class="hidden">Main Nav</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Rooms</a></li>
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Dining</a></li>
+                        <li><a href="#">Spa</a></li>
+                        <li><a href="#">Reservations</a></li>
+                        <li id="deskbooknow"><a href="#">Book Now</a></li>
+                    </ul>
+            </nav>
+        </header>
+        <main>
+        <section id="desk-main-hero" class="desk-grid-full desk-hero-overlap">
+                <img src="images/booknow-hero-desk.jpg" alt="Two people looking happily down at a device" class="col-span-full hero-overlap">
+                <div class="desk-grid-con desk-hero-overlap col-start-1">
+                    <h2 class="desk-hero-img-h2"><span>Couples Resort</span><br>Book Now</h2> 
+                </div>
+        </section> 
+        <section class="desk-grid-con" id="deskbooknowform">
+                <section id="contact-form-fields-right" class="col-span-full">
+                    <h3 class="hidden">Check Availability and Rates</h3>
+                    <div id="deskcalendar">
+                        <img src="images/booknow-calendar-desk.png" alt="A still image of a calendar">
+                    </div>
+                        <form action="email.php" method="POST" enctype="text/plain">
+                        <label for="date">Date:</label>
+                        <input name="date" type="text" placeholder="May 12th, 2026">
+                        <label for="nights">Nights:</label>
+                        <input name="nights" type="text" placeholder="0">
+                        <label for="guests">Guests:</label>
+                        <input name="guests" type="text" placeholder="0">
+                        <div id="submit-button">
+                        <input class="submit-button" name="submit" type="submit" value="Check Availability and Rates"><span></span>
+                        </div>
+                        </form>
+                </section>
+        </section>
+        <section id="desk-contact" class="desk-grid-full">
+                <h2 class="hidden">Contact Us</h2>
+                <div id="phone-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>Toll Free:+1 866 202-1179<br>
+                    Fax:+1 613 637 2615<br>
+                    info[at]couplesresort.com</p>
+                </div>
+                <div id="marker-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>1198 Osprey Rd. (End of)<br>
+                    Minden, Soyers Lake, ON<br>
+                    KOM 2KO</p>
+                </div>
+        </section>
+        <section id="desk-faq-hero" class="desk-grid-full desk-hero-overlap">
+                <img src="images/booknow-dealshero-desk.jpg" alt="A couple in a sauna" class="col-span-full hero-overlap">
+                <div class="desk-grid-con desk-hero-overlap col-start-1">
+                    <h2 class="desk-hero-img-h2"><span>Couples Resort</span><br>Deals and Offers</h2> 
+                </div>
+                <div id="deskbnimages">
+                    <img src="images/booknow-holidays-desk.jpg" alt="A woman standing in the snow">
+                    <img src="images/booknow-activities-desk.jpg" alt="A couple walking through a field">
+                    <img src="images/booknow-dining-desk.jpg" alt="A delicious looking bowl of pasta">
+                </div>
+        </section> 
+        <section id="contactarea" class="desk-grid-full">
+            <h2 class="desk-col-start-1 desk-col-end-3"><span>Couples Resort</span><br>Reservations and Booking Information</h2> 
+                <div id="policy-inq">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Location for Policy Inquiries<br>
+                    139 Galeairy Lake Road<br>
+                    Whitney, Ontario, Canada, K0J 2M0<br>
+                    1-866-202-1179<br>
+                    P. O. Box 310
+                </p>
+                </div>
+        </section>
+        <section id="deskbnfaq" class="faq desk-grid-con">
+            <div class="faq-items col-span-full">
+                    <h3>&#9658; Policies</h3>
+                </div>
+                <div class="faq-items col-span-full">
+                    <h3>&#9658; Deposits</h3>
+                </div>
+                <div class="faq-items col-span-full">
+                    <h3>&#9658; Guest Cancellation and Change Date Fees</h3>
+                </div>
+                <div class="faq-items col-span-full">
+                    <h3>&#9658; Extra Fees</h3>
+                </div>
+                <div class="faq-items col-span-full">
+                    <details>
+                        <summary>
+                        Property Policy
+                        </summary>
+                        <ul>
+                            <li>Front Desk office hours are 8:30 am to 10:00 pm.</li>
+                            <li>Fiber-Optic $$$$ Internet Feeds this remote Resort, currently we provide it Free.</li>
+                            <li>Cell phone coverage is also available in our area.</li>
+                            <li>Breakfast: 8:30 am to 10:30 am - Please reserve a room service time</li>
+                            <li>Lunch: 12:00 pm to 4:00 pm - Served/Take out/Room Service.</li>
+                            <li>Dinner: Please reserve a Table or Room Service time by calling Extension 108 between 1:00 pm - 5:00 pm the day of your arrival.</li>
+                            <li>All Accommodations have Hot Tubs: Resort Policy for your Health Protection is that Hot Tub Chemical Testing is done daily in your Hot Tub, regardless of signage you hang at your door.</li>
+                            <li>Cleaning will occur between 9 am and mid-afternoon. The cleaning card MUST be displayed on your outside door handle or in the plastic holder for housekeeping.</li>
+                            <li>Business Services are available - Inquire at Front Desk.</li>
+                            <li>Please no disturbing music around the lake front or from your private deck.</li>
+                            <li>Keep rooms quiet after 12 midnight.</li>
+                            <li>No Pets Allowed.</li>
+                            <li>All rooms are non-smoking and non-vaping. There are ashtrays provided for smokers located on the balcony or patio. There will be a $300 surcharge applied, if you are smoking or vaping or leaving Cannabis in your accommodation. Leave Cannabis in your vehicle as it is known to stink up the accommodation. During the Spring, Summer and Fall there are Firepits set up by the lake for those that indulge, to enjoy.</li>
+                            <li>All Damages to Accommodations and facilities are the guest's responsibility!</li>
+                            <li>Please give privacy & respect to homes & cottages on the lake and on the Resort. Do Not Trespass.</li>
+                        </ul>
+                    </details>
+                </div>
+                <div class="faq-items col-span-full">
+                    <h3>&#9658; Tipping and Gratuity Advice</h3>
+                </div>
+                <div class="faq-items col-span-full">
+                    <h3>&#9658; Power Outage Policy</h3>
+                </div>
+        </section>
+
+        </main>
+        <footer id="main-footer-desk" class="desk-grid-con">
+            <h2 class="hidden">Couples Resort Footer</h2>     
+                    <div id="main-footer-contact-info-desk" class="desk-col-start-2 desk-col-end-4">                      
+                        <h3>Couples Resort</h3>
+                        <p>1198 Osprey Rd, (End of)<br>
+                            Minden, Soyers Lake, ON, <br>
+                            K0M 2K0
+                        </p>
+                        <h3 class="hidden">Phone and Fax Information</h3>
+                        <p>
+                            Toll Free:+1 877 201-1156<br>
+                            FAX:+1 613 638 2217
+                        </p>
+                    </div>
+                    <div id="itemlist" class="desk-col-start-4 desk-col-end-6">
+                        <ul>
+                            <li>Home</li>
+                            <li>Rooms</li>
+                            <li>Packages</li>
+                            <li>Dining</li>
+                        </ul>
+                    </div>
+                    <div id="itemlist2" class="desk-col-start-6 desk-col-end-8">
+                        <ul>
+                            <li>Spa</li>
+                            <li>Activities</li>
+                            <li>Reservations</li>
+                        </ul>
+                    </div>
+            
+                <p id="price-policy-desk" class="desk-col-span-full">All prices and services on this website and in our reservation system are based on conditions at the time of publishing and are subject to change. Please call to confirm services, availability and pricing. ©2013 Couples Resort Inc. All Rights Reserved. Privacy Policy </p>
+            <section class="desk-grid-con desk-hero-overlap-2">
+                <h2>Book Now</h2>
+        </section> 
+        </footer>
+    </body>
 </html>
