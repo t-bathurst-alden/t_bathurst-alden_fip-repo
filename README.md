@@ -19,6 +19,7 @@ Open any of the HTML files in the browser of your choice, but ideally Google Chr
 6th commit was to continue filling out my other pages.
 7th commit was to make the desktop page, fill out the README, and edit the mobile pages.
 8th commit was to validate my HTML and CSS as well as tweak things.
+9th commit is to finalize things once and for all!
 ## Credits
 Tegan Bathurst-Alden
 Couples Resort
