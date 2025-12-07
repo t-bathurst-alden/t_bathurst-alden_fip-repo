@@ -8,10 +8,10 @@
     <script src="https://kit.fontawesome.com/d0e8431583.js" crossorigin="anonymous"></script>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <title>Welcome to The Couples Resort</title>
+    <title>Book A Stay At The Couples Resort</title>
 </head>
     <body>
-        <h1 class="hidden">Welcome to The Couples Resort</h1>
+        <h1 class="hidden">Book A Stay at The Couples Resort</h1>
         <header id="main-header" class="desk-grid-con">
             <div id="desk-logo" class="desk-col-start-1 desk-col-end-4">
                 <img src="images/couples_resort_logo.svg" alt="The Couples Resort Logo">
@@ -19,12 +19,12 @@
             <nav class="desk-grid-con" id="main-desk-nav">
                 <h2 class="hidden">Main Nav</h2>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="example.html">Home</a></li>
                         <li><a href="#">Rooms</a></li>
                         <li><a href="#">Packages</a></li>
                         <li><a href="#">Dining</a></li>
-                        <li><a href="#">Spa</a></li>
-                        <li><a href="#">Reservations</a></li>
+                        <li><a href="spa.html">Spa</a></li>
+                        <li><a href="booknow.html">Reservations</a></li>
                         <li id="deskbooknow"><a href="#">Book Now</a></li>
                     </ul>
             </nav>
@@ -37,6 +37,7 @@
                 </div>
         </section> 
         <section class="desk-grid-con" id="deskbooknowform">
+            <h2 class="hidden">Check Availability</h2>
                 <section id="contact-form-fields-right" class="col-span-full">
                     <h3 class="hidden">Check Availability and Rates</h3>
                     <div id="deskcalendar">
@@ -44,11 +45,11 @@
                     </div>
                         <form action="email.php" method="POST" enctype="text/plain">
                         <label for="date">Date:</label>
-                        <input name="date" type="text" placeholder="May 12th, 2026">
+                        <input name="date" id="date" type="text" placeholder="May 12th, 2026">
                         <label for="nights">Nights:</label>
-                        <input name="nights" type="text" placeholder="0">
+                        <input name="nights" id="nights" type="text" placeholder="0">
                         <label for="guests">Guests:</label>
-                        <input name="guests" type="text" placeholder="0">
+                        <input name="guests" id="guests" type="text" placeholder="0">
                         <div id="submit-button">
                         <input class="submit-button" name="submit" type="submit" value="Check Availability and Rates"><span></span>
                         </div>
@@ -94,6 +95,7 @@
                 </div>
         </section>
         <section id="deskbnfaq" class="faq desk-grid-con">
+            <h2 class="hidden">Some of our frequently asked questions</h2>
             <div class="faq-items col-span-full">
                     <h3>&#9658; Policies</h3>
                 </div>

@@ -180,9 +180,10 @@ body {
     margin-top: 50px;
  }
 
- #contact-con div {
+ .contact-con div {
    display: flex;
    justify-content: center;
+   padding-right: 70px;
  }
 
  .fas {
@@ -460,8 +461,8 @@ body {
  }
 
  .spa-paragraph {
-   margin-top: 15px;
-
+   margin-top: 10px;
+   width: 372px;
  }
 
 .spa-hero {
@@ -488,14 +489,18 @@ body {
 }
 
 #award-par {
-   margin-top: 20px;
+   margin-top: 15px;
+   border: none;
+}
+
+#award-par-img {
    justify-self: center;
 }
 
-#award-par img {
-   justify-self: center;
+#circumstances-par {
+   padding-left: 20px;
+   padding-right: 20px;
 }
-
 
 /*FAQ Page*/
 
@@ -522,6 +527,7 @@ summary {
 }
 
 input[type="checkbox"]::before {
+   cursor: pointer;
    position: relative;
    display: block;
    width: 55px;
@@ -530,11 +536,12 @@ input[type="checkbox"]::before {
    background-color: #9a2018;
    content: "Buy Now";
    padding: 5px;
-   left: 300px;
+   float: left;
 }
 
 input[type="checkbox"]:checked + span::after {
-   content: "💰";
+   float: right;
+   content: "💰💸💵💴💶💷🪙💳💎";
 }
 
 
@@ -543,12 +550,18 @@ input[type="checkbox"]:checked + span::after {
 
  #calendarimage {
    margin-top: 15px;
+   padding-right: 20px;
+   justify-content: center;
  }
 
  #booknowform {
    font-size: 14px;
    line-height: 15px;
    background-color: #c7c7c7;
+   margin-top: 20px;
+   padding-top: 20px;
+   border-top: solid 3px #9a2018;
+
  }
 
  #submit-button {
@@ -570,13 +583,18 @@ input[type="checkbox"]:checked + span::after {
    margin: 20px;
 }
 
+/*Animation is here!!!!!*/
+
+
 .submit-button:hover {
    animation: jump 1s ease-in-out infinite;
 }
 
 @keyframes jump{
    0% {transform: translateY(0px);}
-   50% {transform: translateY(-10px);}
+   25% {transform: translateY(-10px);}
+   50% {transform: translateY(0px);}
+   75% {transform: translateY(-3px);}
    100% {transform: translateY(0px);}
 }
 
@@ -587,6 +605,12 @@ input[type="submit"]:checked + span::after {
 #booknow-deals {
    margin-top: 20px;
    margin-bottom: 20px;
+   border-top: solid 3px #9a2018;
+   padding-top: 20px;
+}
+
+#hero-address {
+   line-height: 20px;
 }
 
 
@@ -599,6 +623,7 @@ input[type="submit"]:checked + span::after {
 
 #booking-info {
    border-bottom: solid 3px #9a2018;
+   font-size: 16px;
 }
 
 #bn-faq {
@@ -607,14 +632,15 @@ input[type="submit"]:checked + span::after {
 
 #marker-svg-bottom {
    float: left; 
+   height: 200px;
+   width: auto;
 }
 #bottomcontact {
    background-color: #fff;
+   justify-content: center;
+   line-height: 20px;
 }
-.hero-no-par {
-   border-bottom: solid 3px #9a2018;
-   padding-bottom: 20px;
-}
+
 
 /*Desktop CSS*/
 
@@ -667,6 +693,7 @@ input[type="submit"]:checked + span::after {
    background-color: #c7c7c7;
    padding-top: 30px;
    margin-top: 20px;
+   padding-bottom: 30px;
  }
 
 
@@ -696,10 +723,14 @@ input[type="submit"]:checked + span::after {
 
  #desk-faq-hero {
    margin: 0 auto;
+
  }
 
  #deskbnimages {
    margin-top: 20px;
+   border-top: solid 1px #9a2018;
+   padding-top: 20px;
+   padding-bottom: 20px;
  }
 
  #contactarea {
