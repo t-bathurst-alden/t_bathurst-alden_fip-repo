@@ -8,10 +8,10 @@
     <script src="https://kit.fontawesome.com/d0e8431583.js" crossorigin="anonymous"></script>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <title>Welcome to The Couples Resort</title>
+    <title>Book Your Stay at the Couples Resort</title>
 </head>
 <body>
-    <h1 class="hidden">Welcome to The Couples Resort</h1>
+    <h1 class="hidden">Book Your Stay at the Couples Resort</h1>
     <div id="mobile-outline">
     <header id="main-header" class="grid-con">
         <nav id="main-nav" class="col-span-full">
@@ -21,7 +21,7 @@
                 <img src="images/burger.svg" alt="hamburger menu icon">
             </label>
                 <ul id="burger-con">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="example.html">Home</a></li>
                     <li><a href="#">Rooms</a></li>
                     <li><a href="#">Packages</a></li>
                     <li><a href="#">Dining</a></li>
@@ -42,42 +42,48 @@
                 </div>
         </section> 
         <!--This is where I start my page specific code! The calendar will be an image, sorry :(-->
-        <div id="calendarimage">
+
+        <section class="grid-con" id="booknowform">
+            <h2 class="hidden">Calendar</h2>
+            <div id="calendarimage" class="">
             <img src="images/booknow-mobile-calendar.jpg" alt="An image of a calendar">
         </div>
-        <section class="grid-con" id="booknowform">
                     <section id="contact-form-fields-right" class="col-span-full">
-                    <h3 class="hidden">Check Availability and Rates</h3>
+                    <h2 class="hidden">Check Availability and Rates</h2>
                     <form action="email.php" method="POST" enctype="text/plain">
                         <label for="date">Date:</label>
-                        <input name="date" type="text" placeholder="May 12th, 2026">
+                        <input name="date" id="date" type="text" placeholder="May 12th, 2026">
                         <label for="nights">Nights:</label>
-                        <input name="nights" type="text" placeholder="0">
+                        <input name="nights" id="nights" type="text" placeholder="0">
                         <label for="guests">Guests:</label>
-                        <input name="guests" type="text" placeholder="0">
+                        <input name="guests" id="guests" type="text" placeholder="0">
                         <div id="submit-button">
                         <input class="submit-button" name="submit" type="submit" value="Check Availability and Rates"><span></span>
                         </div>
                     </form>
                 </section>
         </section>
-        <section class="grid-con" id="booknowcontact">
-                <div class="col-span-full">             
-                    <i class="fas fa-mobile-alt" id="phone-svg"></i>
-                    <p id="contact-text">
+        <section class="grid-con col-span-full" id="booknowcontact">
+            <h2 class="hidden">Contact information</h2>
+            <div class="grid-con contact-con"> 
+                <div class="col-span-4">             
+                    <i class="fas fa-mobile-alt"></i>
+                    <p id="hero-numbers">
                         Toll Free:<a href="tel:1-866-202-1179">+1 866 202-1179</a><br>
                         Fax:+1 613 637 2615<br>
                         info[at]coupleresort.com
                     </p>   
                 </div> 
                 <div class="col-span-4">            
-                    <i class="fas fa-map-marker-alt" id="marker-svg"></i>
+                    <i class="fas fa-map-marker-alt"></i>
                     <p id="hero-address">
                         1198 Osprey Rd, (End of)<br>
                         Minden, Soyers Lake, ON<br>
                         K0M 2K0
                     </p>   
-                </div>   
+                </div>               
+            </div> 
+
         </section>
         <section id="booknow-info-hero" class="grid-full">
                 <img src="images/booknow-dealshero-mobile.jpg" alt="A couple in a sauna together" class="col-span-full hero-overlap">
@@ -86,7 +92,8 @@
                 </div>   
         </section> 
 
-        <section class="grid-con" id="booknow-deals">
+        <section class="grid-con col-span-full" id="booknow-deals">
+            <h2 class="hidden">Our deals</h2>
             <div class="col-span-2">
                 <img src="images/booknow-holidays-mobile.jpg" alt="A woman standing in the snow">
             </div>
@@ -99,11 +106,9 @@
                 <img src="images/fillerbox.jpg" alt="A blank grey square cause Jarrod told me to.">
             </div>
         </section>
-        <section id="bn-faq" class="grid-con">
-            <h2 class="hidden">Booking Information</h2>
-            <p id="booking-info" class="col-span-3">Reservations and Booking Information</p>
-        </section>
-        <section class="faq grid-con">
+
+        <section class="faq grid-con" id="bnfaq">
+                <h2 id="booking-info" class="col-span-full">Reservations and Booking Information</h2>
                 <div class="faq-items col-span-full">
                     <h3>&#9658; Policies</h3>
                 </div>
@@ -148,14 +153,15 @@
                 </div>
 
         </section>
-        <section class="grid-con" id="bottomcontact">
+        <section class="grid-con contact-con" id="bottomcontact">
+            <h2 class="hidden">Contact info for policy inquiries</h2>
             <div class="col-span-4">            
                     <i class="fas fa-map-marker-alt" id="marker-svg-bottom"></i>
-                    <p id="hero-address">Location for Policy Inquiries</p>
-                            <p>139 Galeairy Lake Road</p>
-                            Whitney, Ontario, Canada, K0J 2M0</p>
-                            <p>1-866-202-1179</p>
-                            <p>O. Box 310</p>
+                    <p>Location for Policy Inquiries<br>
+                            139 Galeairy Lake Road<br>
+                            Whitney, Ontario, Canada, K0J 2M0<br>
+                            1-866-202-1179<br>
+                            O. Box 310</p>
                 </div>   
         </section>
 
